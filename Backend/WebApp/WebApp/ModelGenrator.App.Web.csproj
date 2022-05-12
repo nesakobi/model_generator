@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ModelGenerator.App.Core\ModelGenerator.App.Core.csproj" />
+    <ProjectReference Include="..\ModelGenerator.Common\ModelGenerator.Common.csproj" />
+    <ProjectReference Include="..\ModelGenerator.DAL.Implementations\ModelGenerator.DAL.Implementations.csproj" />
+    <ProjectReference Include="..\ModelGenerator.DAL.Interfaces\ModelGenerator.DAL.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>
