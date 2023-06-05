@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ModelGenerator.Domain.Models
+﻿namespace ModelGenerator.Domain.Models
 {
     public class Attribute
     {
