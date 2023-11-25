@@ -1,9 +1,9 @@
 ﻿namespace ModelGenerator.Domain.Models
 {
     /// <summary>
-    /// Represents class or property attribute
+    /// 
     /// </summary>
-    public class Attribute
+    public class FilterOperator
     {
         /// <summary>
         /// 
@@ -13,6 +13,11 @@
         /// <summary>
         /// 
         /// </summary>
-        public required string Name { get; set; }
+        public required string Operator { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string? OperatorDisplayString { get; set; }
     }
 }

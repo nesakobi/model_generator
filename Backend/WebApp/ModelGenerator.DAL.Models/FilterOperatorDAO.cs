@@ -4,8 +4,8 @@
     {
         public Guid Id { get; set; }
 
-        public string Operator { get; set; }
+        public required string Operator { get; set; }
 
-        public string OperatorDisplayString { get; set; }
+        public string? OperatorDisplayString { get; set; }
     }
 }

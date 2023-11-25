@@ -5,7 +5,7 @@
         Boolean,                    // bool
         Symbol,                     // char
         String,                     // string
-        SmaillInteger,              // sbyte
+        SmallInteger,               // sbyte
         Integer,                    // int
         BigInteger,                 // long
         UnsignedSmallInteger,       // byte

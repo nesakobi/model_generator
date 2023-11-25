@@ -2,6 +2,9 @@
 
 namespace ModelGenerator.DAL.Interfaces
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public interface IPropertyRepository
     {
         IEnumerable<Property> GetTypePropertiesByType(Guid typeId);

@@ -3,9 +3,12 @@ using ModelGenerator.Domain.Models;
 
 namespace ModelGenerator.DAL.Implementations
 {
+    /// <summary>
+    /// 
+    /// </summary>
     internal class EntityRepository : IEntityRepository
     {
-        public bool CreateEntity(IEnumerable<Entity> entities)
+        public Entity CreateEntity(IEnumerable<Entity> entities)
         {
             throw new NotImplementedException();
         }

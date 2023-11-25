@@ -1,21 +1,30 @@
 ﻿using ModelGenerator.Common.Helpers;
+using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
 
 namespace ModelGenerator.DAL.Models
 {
     public class PropertyDAO
     {
-        public Guid Id { get; set; }
+        public required Guid Id { get; set; }
 
-        public string Name { get; set; }
+        public required string Name { get; set; }
 
-        public PropertyType Type { get; set; }
+        [BsonRepresentation(BsonType.String)]
+        public required PropertyType Type { get; set; }
 
-        public string ValueValidatorRegex { get; set; }
+        public string? ValueValidatorRegex { get; set; }
 
-        public object DefaultValue { get; set; }
+        public string? Comment { get; set; }
 
-        public IEnumerable<Guid> AttributeIds { get; set; }
+        public object? DefaultValue { get; set; }
 
-        public IEnumerable<Guid> FilterOperatorIds { get; set; }
+        public string? DisplayName { get; set; }
+
+        public string? Description { get; set; }
+
+        public IEnumerable<Guid>? AttributeIds { get; set; }
+
+        public IEnumerable<Guid>? FilterOperatorIds { get; set; }
     }
 }

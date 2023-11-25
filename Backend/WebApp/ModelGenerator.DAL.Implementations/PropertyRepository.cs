@@ -3,6 +3,9 @@ using ModelGenerator.Domain.Models;
 
 namespace ModelGenerator.DAL.Implementations
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class PropertyRepository : IPropertyRepository
     {
         public bool CreateTypeProperties(Guid typeId, IEnumerable<Property> properties)
