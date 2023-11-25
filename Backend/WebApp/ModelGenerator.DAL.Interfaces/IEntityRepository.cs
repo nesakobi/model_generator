@@ -2,9 +2,12 @@
 
 namespace ModelGenerator.DAL.Interfaces
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public interface IEntityRepository
     {
-        bool CreateEntity(IEnumerable<Entity> entities);
+        Entity CreateEntity(IEnumerable<Entity> entities);
 
         bool UpdateEntities(IEnumerable<Entity> entities);
 
