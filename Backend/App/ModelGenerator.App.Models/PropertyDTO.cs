@@ -22,30 +22,34 @@ namespace ModelGenerator.App.Models
 
         [Key(3)]
         [ProtoMember(4)]
-        public string? ValueValidatorRegex { get; set; }
+        public EntityDTO? PropertyType { get; set; }
 
         [Key(4)]
         [ProtoMember(5)]
-        public string? Comment { get; set; }
+        public string? ValueValidatorRegex { get; set; }
 
         [Key(5)]
         [ProtoMember(6)]
-        public object? DefaultValue { get; set; }
+        public string? Comment { get; set; }
 
         [Key(6)]
         [ProtoMember(7)]
-        public string? DisplayName { get; set; }
+        public object? DefaultValue { get; set; }
 
         [Key(7)]
         [ProtoMember(8)]
-        public string? Description { get; set; }
+        public string? DisplayName { get; set; }
 
         [Key(8)]
         [ProtoMember(9)]
-        public IEnumerable<AttributeDTO>? AttributeList { get; set; }
+        public string? Description { get; set; }
 
         [Key(9)]
         [ProtoMember(10)]
+        public IEnumerable<AttributeDTO>? AttributeList { get; set; }
+
+        [Key(10)]
+        [ProtoMember(11)]
         public IEnumerable<FilterOperatorDTO>? FilterOperators { get; set; }
     }
 }

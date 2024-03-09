@@ -13,6 +13,8 @@ namespace ModelGenerator.DAL.Models
         [BsonRepresentation(BsonType.String)]
         public required PropertyType Type { get; set; }
 
+        public Guid? PropertyTypeId { get; set; }
+
         public string? ValueValidatorRegex { get; set; }
 
         public string? Comment { get; set; }

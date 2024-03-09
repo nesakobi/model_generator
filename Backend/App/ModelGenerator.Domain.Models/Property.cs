@@ -23,6 +23,13 @@ namespace ModelGenerator.Domain.Models
         public required PropertyType Type { get; set; }
 
         /// <summary>
+        /// Custom type for property
+        /// 
+        /// not null when Type == <see cref="PropertyType.Custom"/>
+        /// </summary>
+        public Entity? PropertyType { get; set; }
+
+        /// <summary>
         /// Property value validation regex
         /// </summary>
         public string? ValueValidatorRegex { get; set; }
