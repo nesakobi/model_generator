@@ -18,7 +18,7 @@ namespace ModelGenerator.Domain.Models
         public required string Name { get; set; }
 
         /// <summary>
-        /// Proeprty type
+        /// Property type
         /// </summary>
         public required PropertyType Type { get; set; }
 
@@ -43,7 +43,7 @@ namespace ModelGenerator.Domain.Models
         public string? DisplayName { get; set; }
 
         /// <summary>
-        /// Describtion about use cases - UI purpose
+        /// Description about use cases - UI purpose
         /// </summary>
         public string? Description { get; set; }
 

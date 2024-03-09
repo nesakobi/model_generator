@@ -48,7 +48,7 @@ namespace ModelGenerator.Domain.Models
         public IEnumerable<Property>? Properties { get; set; }
 
         /// <summary>
-        /// Inner declated types
+        /// Inner declared types
         /// </summary>
         public IEnumerable<Entity>? InternalDeclaredType { get; set; }
 

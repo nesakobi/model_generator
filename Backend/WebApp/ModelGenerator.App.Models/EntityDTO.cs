@@ -34,7 +34,7 @@ namespace ModelGenerator.App.Models
 
         [Key(6)]
         [ProtoMember(7)]
-        public IEnumerable<Attribute>? Attributes { get; set; }
+        public IEnumerable<AttributeDTO>? Attributes { get; set; }
 
         [Key(7)]
         [ProtoMember(8)]
