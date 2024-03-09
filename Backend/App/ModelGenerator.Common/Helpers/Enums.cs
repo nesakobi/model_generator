@@ -38,7 +38,7 @@
     public enum AccessModifier
     {
         Public,
-        PublicAndInernal,
+        PublicAndInternal,
         Protected,
         Internal,
         PrivateAndProtected,
