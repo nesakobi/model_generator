@@ -3,16 +3,9 @@
     /// <summary>
     /// Represents class or property attribute
     /// </summary>
-    public class Attribute
-    {
-        /// <summary>
-        /// 
-        /// </summary>
-        public required Guid Id { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public required string Name { get; set; }
-    }
+    /// <param name="Id">  </param>
+    /// <param name="Name">  </param>
+    public record Attribute(
+        Guid Id,
+        string Name);
 }

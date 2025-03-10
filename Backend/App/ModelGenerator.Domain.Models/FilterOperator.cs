@@ -3,21 +3,11 @@
     /// <summary>
     /// 
     /// </summary>
-    public class FilterOperator
-    {
-        /// <summary>
-        /// 
-        /// </summary>
-        public required Guid Id { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public required string Operator { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public string? OperatorDisplayString { get; set; }
-    }
+    /// <param name="Id">  </param>
+    /// <param name="Operator">  </param>
+    /// <param name="OperatorDisplayString">  </param>
+    public record FilterOperator(
+        Guid Id,
+        string Operator,
+        string? OperatorDisplayString);
 }

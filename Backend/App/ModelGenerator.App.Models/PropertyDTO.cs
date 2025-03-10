@@ -6,50 +6,16 @@ namespace ModelGenerator.App.Models
 {
     [MessagePackObject]
     [ProtoContract]
-    public class PropertyDTO
-    {
-        [Key(0)]
-        [ProtoMember(1)]
-        public required Guid Id { get; set; }
-
-        [Key(1)]
-        [ProtoMember(2)]
-        public required string Name { get; set; }
-
-        [Key(2)]
-        [ProtoMember(3)]
-        public required PropertyType Type { get; set; }
-
-        [Key(3)]
-        [ProtoMember(4)]
-        public EntityDTO? PropertyType { get; set; }
-
-        [Key(4)]
-        [ProtoMember(5)]
-        public string? ValueValidatorRegex { get; set; }
-
-        [Key(5)]
-        [ProtoMember(6)]
-        public string? Comment { get; set; }
-
-        [Key(6)]
-        [ProtoMember(7)]
-        public object? DefaultValue { get; set; }
-
-        [Key(7)]
-        [ProtoMember(8)]
-        public string? DisplayName { get; set; }
-
-        [Key(8)]
-        [ProtoMember(9)]
-        public string? Description { get; set; }
-
-        [Key(9)]
-        [ProtoMember(10)]
-        public IEnumerable<AttributeDTO>? AttributeList { get; set; }
-
-        [Key(10)]
-        [ProtoMember(11)]
-        public IEnumerable<FilterOperatorDTO>? FilterOperators { get; set; }
-    }
+    public record PropertyDTO(
+        [property: Key(0)][property: ProtoMember(1)] Guid Id,
+        [property: Key(1)][property: ProtoMember(2)] string Name,
+        [property: Key(2)][property: ProtoMember(3)] PropertyType Type,
+        [property: Key(3)][property: ProtoMember(4)] EntityDTO? PropertyType,
+        [property: Key(4)][property: ProtoMember(5)] string? ValueValidatorRegex,
+        [property: Key(5)][property: ProtoMember(6)] string? Comment,
+        [property: Key(6)][property: ProtoMember(7)] object? DefaultValue,
+        [property: Key(7)][property: ProtoMember(8)] string? DisplayName,
+        [property: Key(8)][property: ProtoMember(9)] string? Description,
+        [property: Key(9)][property: ProtoMember(10)] IEnumerable<AttributeDTO>? AttributeList,
+        [property: Key(10)][property: ProtoMember(11)] IEnumerable<FilterOperatorDTO>? FilterOperators);
 }
