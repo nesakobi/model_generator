@@ -5,63 +5,29 @@ namespace ModelGenerator.Domain.Models
     /// <summary>
     /// Describing class property
     /// </summary>
-    public class Property
-    {
-        /// <summary>
-        /// 
-        /// </summary>
-        public required Guid Id { get; set; }
-
-        /// <summary>
-        /// Property name
-        /// </summary>
-        public required string Name { get; set; }
-
-        /// <summary>
-        /// Property type
-        /// </summary>
-        public required PropertyType Type { get; set; }
-
-        /// <summary>
-        /// Custom type for property
-        /// 
-        /// not null when Type == <see cref="PropertyType.Custom"/>
-        /// </summary>
-        public Entity? PropertyType { get; set; }
-
-        /// <summary>
-        /// Property value validation regex
-        /// </summary>
-        public string? ValueValidatorRegex { get; set; }
-
-        /// <summary>
-        /// Comment for property
-        /// </summary>
-        public string? Comment { get; set; }
-
-        /// <summary>
-        /// Default value for property
-        /// </summary>
-        public object? DefaultValue { get; set; }
-
-        /// <summary>
-        /// Display name - UI purpose
-        /// </summary>
-        public string? DisplayName { get; set; }
-
-        /// <summary>
-        /// Description about use cases - UI purpose
-        /// </summary>
-        public string? Description { get; set; }
-
-        /// <summary>
-        /// Attributes connected to the property
-        /// </summary>
-        public IEnumerable<Attribute>? AttributeList { get; set; }
-
-        /// <summary>
-        /// Filter operators allowed for property - UI purpose
-        /// </summary>
-        public IEnumerable<FilterOperator>? FilterOperators { get; set; }
-    }
+    /// <param name="Id">  </param>
+    /// <param name="Name"> Property name </param>
+    /// <param name="Type"> Property type </param>
+    /// <param name="PropertyType"> Custom type for property
+    /// 
+    /// not null when Type == <see cref="PropertyType.Custom"/> </param>
+    /// <param name="ValueValidatorRegex"> Property value validation regex </param>
+    /// <param name="Comment"> Comment for property </param>
+    /// <param name="DefaultValue"> Default value for property </param>
+    /// <param name="DisplayName"> Display name - UI purpose </param>
+    /// <param name="Description"> Description about use cases - UI purpose </param>
+    /// <param name="AttributeList"> Attributes connected to the property </param>
+    /// <param name="FilterOperators"> Filter operators allowed for property - UI purpose </param>
+    public record Property(
+        Guid Id,
+        string Name,
+        PropertyType Type,
+        Entity? PropertyType,
+        string? ValueValidatorRegex,
+        string? Comment,
+        object? DefaultValue,
+        string? DisplayName,
+        string? Description,
+        IEnumerable<Attribute>? AttributeList,
+        IEnumerable<FilterOperator>? FilterOperators);
 }

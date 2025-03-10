@@ -5,18 +5,8 @@ namespace ModelGenerator.App.Models
 {
     [MessagePackObject]
     [ProtoContract]
-    public class FilterOperatorDTO
-    {
-        [Key(0)]
-        [ProtoMember(1)]
-        public required Guid Id { get; set; }
-
-        [Key(1)]
-        [ProtoMember(2)]
-        public required string Operator { get; set; }
-
-        [Key(2)]
-        [ProtoMember(3)]
-        public string? OperatorDisplayString { get; set; }
-    }
+    public record FilterOperatorDTO(
+        [property: Key(0)][property: ProtoMember(1)] Guid Id, 
+        [property: Key(1)][property: ProtoMember(2)] string Operator,
+        [property: Key(2)][property: ProtoMember(3)] string? OperatorDisplayString);
 }
